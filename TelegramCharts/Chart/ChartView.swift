@@ -41,14 +41,14 @@ class ChartView: UIView {
     func initialize() {
         self.layer.addSublayer(linesLayer)
         self.layer.addSublayer(xAxisLayer)
+        
+        dateFormatter.dateFormat = "MMM d"
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         linesLayer.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height - xAxisHeight)
         xAxisLayer.frame = CGRect(x: 0, y: bounds.height - xAxisHeight, width: bounds.width, height: xAxisHeight)
-        
-        dateFormatter.dateFormat = "MMM d"
         
         updateChart()
         updateXAxis()
