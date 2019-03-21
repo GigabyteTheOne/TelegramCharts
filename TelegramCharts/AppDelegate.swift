@@ -3,7 +3,7 @@
 //  TelegramCharts
 //
 //  Created by Konstantin Simakov on 12/03/2019.
-//  Copyright © 2019 Konstantin Simakov. All rights reserved.
+//  Copyright © 2019 Konstantin Simakov (simakov.it). All rights reserved.
 //
 
 import UIKit
@@ -13,9 +13,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let chartsDataProvider = ChartsDataProvider()
+        if let path = Bundle.main.path(forResource: "chart_data", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                if let jsonResult = jsonResult as? [Any] {
+                    chartsDataProvider.load(chartsJson: jsonResult)
+                }
+            } catch {
+                // handle error
+            }
+        }
+        
+        
+        let viewController = ViewController(chartsDataProvider: chartsDataProvider)
+        let navigationController = UINavigationController(rootViewController: viewController)
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
+        self.window = window
+        
         return true
     }
 

@@ -9,22 +9,19 @@
 /* Begin PBXBuildFile section */
 		5CC915B0223779EC00472B1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC915AF223779EC00472B1C /* AppDelegate.swift */; };
 		5CC915B2223779EC00472B1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC915B1223779EC00472B1C /* ViewController.swift */; };
-		5CC915B5223779EC00472B1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC915B3223779EC00472B1C /* Main.storyboard */; };
 		5CC915B7223779ED00472B1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC915B6223779ED00472B1C /* Assets.xcassets */; };
 		5CC915BA223779ED00472B1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC915B8223779ED00472B1C /* LaunchScreen.storyboard */; };
-		5CC915C5223779ED00472B1C /* TelegramChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC915C4223779ED00472B1C /* TelegramChartsTests.swift */; };
-		5CC915D0223779ED00472B1C /* TelegramChartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC915CF223779ED00472B1C /* TelegramChartsUITests.swift */; };
+		5CC915E322377C4A00472B1C /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC915E222377C4A00472B1C /* ChartData.swift */; };
+		5CC915E422377C4A00472B1C /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC915E222377C4A00472B1C /* ChartData.swift */; };
+		5CC915E6223782E000472B1C /* ChartDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC915E5223782E000472B1C /* ChartDataTests.swift */; };
+		5CC915E8223783BF00472B1C /* chart_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CC915E7223783BF00472B1C /* chart_data.json */; };
+		5CC915EC2237857A00472B1C /* ChartsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC915EB2237857A00472B1C /* ChartsDataProvider.swift */; };
+		5CC915ED2237857A00472B1C /* ChartsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC915EB2237857A00472B1C /* ChartsDataProvider.swift */; };
+		5CC915EF22378A2300472B1C /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC915EE22378A2300472B1C /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		5CC915C1223779ED00472B1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5CC915A4223779EC00472B1C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5CC915AB223779EC00472B1C;
-			remoteInfo = TelegramCharts;
-		};
-		5CC915CC223779ED00472B1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5CC915A4223779EC00472B1C /* Project object */;
 			proxyType = 1;
@@ -37,16 +34,16 @@
 		5CC915AC223779EC00472B1C /* TelegramCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegramCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC915AF223779EC00472B1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CC915B1223779EC00472B1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5CC915B4223779EC00472B1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CC915B6223779ED00472B1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CC915B9223779ED00472B1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CC915BB223779ED00472B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CC915C0223779ED00472B1C /* TelegramChartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegramChartsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CC915C4223779ED00472B1C /* TelegramChartsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramChartsTests.swift; sourceTree = "<group>"; };
 		5CC915C6223779ED00472B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5CC915CB223779ED00472B1C /* TelegramChartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegramChartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CC915CF223779ED00472B1C /* TelegramChartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramChartsUITests.swift; sourceTree = "<group>"; };
-		5CC915D1223779ED00472B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CC915E222377C4A00472B1C /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		5CC915E5223782E000472B1C /* ChartDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataTests.swift; sourceTree = "<group>"; };
+		5CC915E7223783BF00472B1C /* chart_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chart_data.json; sourceTree = "<group>"; };
+		5CC915EB2237857A00472B1C /* ChartsDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsDataProvider.swift; sourceTree = "<group>"; };
+		5CC915EE22378A2300472B1C /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +61,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CC915C8223779ED00472B1C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,7 +69,6 @@
 			children = (
 				5CC915AE223779EC00472B1C /* TelegramCharts */,
 				5CC915C3223779ED00472B1C /* TelegramChartsTests */,
-				5CC915CE223779ED00472B1C /* TelegramChartsUITests */,
 				5CC915AD223779EC00472B1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +78,6 @@
 			children = (
 				5CC915AC223779EC00472B1C /* TelegramCharts.app */,
 				5CC915C0223779ED00472B1C /* TelegramChartsTests.xctest */,
-				5CC915CB223779ED00472B1C /* TelegramChartsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +87,11 @@
 			children = (
 				5CC915AF223779EC00472B1C /* AppDelegate.swift */,
 				5CC915B1223779EC00472B1C /* ViewController.swift */,
-				5CC915B3223779EC00472B1C /* Main.storyboard */,
 				5CC915B6223779ED00472B1C /* Assets.xcassets */,
 				5CC915B8223779ED00472B1C /* LaunchScreen.storyboard */,
 				5CC915BB223779ED00472B1C /* Info.plist */,
+				5CC915DE22377BB100472B1C /* Chart */,
+				5CC915DD22377BB100472B1C /* Data */,
 			);
 			path = TelegramCharts;
 			sourceTree = "<group>";
@@ -110,19 +99,28 @@
 		5CC915C3223779ED00472B1C /* TelegramChartsTests */ = {
 			isa = PBXGroup;
 			children = (
-				5CC915C4223779ED00472B1C /* TelegramChartsTests.swift */,
 				5CC915C6223779ED00472B1C /* Info.plist */,
+				5CC915E5223782E000472B1C /* ChartDataTests.swift */,
 			);
 			path = TelegramChartsTests;
 			sourceTree = "<group>";
 		};
-		5CC915CE223779ED00472B1C /* TelegramChartsUITests */ = {
+		5CC915DD22377BB100472B1C /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				5CC915CF223779ED00472B1C /* TelegramChartsUITests.swift */,
-				5CC915D1223779ED00472B1C /* Info.plist */,
+				5CC915E7223783BF00472B1C /* chart_data.json */,
+				5CC915EB2237857A00472B1C /* ChartsDataProvider.swift */,
+				5CC915E222377C4A00472B1C /* ChartData.swift */,
 			);
-			path = TelegramChartsUITests;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5CC915DE22377BB100472B1C /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				5CC915EE22378A2300472B1C /* ChartView.swift */,
+			);
+			path = Chart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,24 +161,6 @@
 			productReference = 5CC915C0223779ED00472B1C /* TelegramChartsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5CC915CA223779ED00472B1C /* TelegramChartsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5CC915DA223779ED00472B1C /* Build configuration list for PBXNativeTarget "TelegramChartsUITests" */;
-			buildPhases = (
-				5CC915C7223779ED00472B1C /* Sources */,
-				5CC915C8223779ED00472B1C /* Frameworks */,
-				5CC915C9223779ED00472B1C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5CC915CD223779ED00472B1C /* PBXTargetDependency */,
-			);
-			name = TelegramChartsUITests;
-			productName = TelegramChartsUITests;
-			productReference = 5CC915CB223779ED00472B1C /* TelegramChartsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,18 +169,13 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Konstantin Simakov";
+				ORGANIZATIONNAME = "Konstantin Simakov (simakov.it)";
 				TargetAttributes = {
 					5CC915AB223779EC00472B1C = {
 						CreatedOnToolsVersion = 10.1;
 					};
 					5CC915BF223779ED00472B1C = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 5CC915AB223779EC00472B1C;
-					};
-					5CC915CA223779ED00472B1C = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 5CC915AB223779EC00472B1C;
 					};
 				};
 			};
@@ -219,7 +194,6 @@
 			targets = (
 				5CC915AB223779EC00472B1C /* TelegramCharts */,
 				5CC915BF223779ED00472B1C /* TelegramChartsTests */,
-				5CC915CA223779ED00472B1C /* TelegramChartsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,18 +205,11 @@
 			files = (
 				5CC915BA223779ED00472B1C /* LaunchScreen.storyboard in Resources */,
 				5CC915B7223779ED00472B1C /* Assets.xcassets in Resources */,
-				5CC915B5223779EC00472B1C /* Main.storyboard in Resources */,
+				5CC915E8223783BF00472B1C /* chart_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5CC915BE223779ED00472B1C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5CC915C9223779ED00472B1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,7 +224,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC915B2223779EC00472B1C /* ViewController.swift in Sources */,
+				5CC915EC2237857A00472B1C /* ChartsDataProvider.swift in Sources */,
 				5CC915B0223779EC00472B1C /* AppDelegate.swift in Sources */,
+				5CC915EF22378A2300472B1C /* ChartView.swift in Sources */,
+				5CC915E322377C4A00472B1C /* ChartData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,15 +235,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CC915C5223779ED00472B1C /* TelegramChartsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5CC915C7223779ED00472B1C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5CC915D0223779ED00472B1C /* TelegramChartsUITests.swift in Sources */,
+				5CC915ED2237857A00472B1C /* ChartsDataProvider.swift in Sources */,
+				5CC915E422377C4A00472B1C /* ChartData.swift in Sources */,
+				5CC915E6223782E000472B1C /* ChartDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,22 +249,9 @@
 			target = 5CC915AB223779EC00472B1C /* TelegramCharts */;
 			targetProxy = 5CC915C1223779ED00472B1C /* PBXContainerItemProxy */;
 		};
-		5CC915CD223779ED00472B1C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5CC915AB223779EC00472B1C /* TelegramCharts */;
-			targetProxy = 5CC915CC223779ED00472B1C /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5CC915B3223779EC00472B1C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5CC915B4223779EC00472B1C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5CC915B8223779ED00472B1C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -468,7 +419,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64QZLAWCLW;
 				INFOPLIST_FILE = TelegramChartsTests/Info.plist;
@@ -481,7 +431,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelegramCharts.app/TelegramCharts";
 			};
 			name = Debug;
 		};
@@ -489,7 +438,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64QZLAWCLW;
 				INFOPLIST_FILE = TelegramChartsTests/Info.plist;
@@ -502,47 +450,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelegramCharts.app/TelegramCharts";
-			};
-			name = Release;
-		};
-		5CC915DB223779ED00472B1C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 64QZLAWCLW;
-				INFOPLIST_FILE = TelegramChartsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.simakov.TelegramChartsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TelegramCharts;
-			};
-			name = Debug;
-		};
-		5CC915DC223779ED00472B1C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 64QZLAWCLW;
-				INFOPLIST_FILE = TelegramChartsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.simakov.TelegramChartsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TelegramCharts;
 			};
 			name = Release;
 		};
@@ -572,15 +479,6 @@
 			buildConfigurations = (
 				5CC915D8223779ED00472B1C /* Debug */,
 				5CC915D9223779ED00472B1C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5CC915DA223779ED00472B1C /* Build configuration list for PBXNativeTarget "TelegramChartsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5CC915DB223779ED00472B1C /* Debug */,
-				5CC915DC223779ED00472B1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
